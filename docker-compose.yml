@@ -66,7 +66,7 @@ services:
       - "8080:8080"
       - "7077:7077"
     volumes:
-      - ./app:/app
+      - ./_volume:/volume
     environment:
       - INIT_DAEMON_STEP=setup_spark
   spark-worker-1:
